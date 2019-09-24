@@ -17,6 +17,7 @@ steps:
 - script: npm install browserstack-local
 - script: npm install request
 - script: npm install async
+- script: npm install vsts-task-lib
 - task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'LocalConnection'
