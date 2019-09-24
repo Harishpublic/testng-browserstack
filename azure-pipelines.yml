@@ -18,6 +18,8 @@ steps:
 - script: npm install request
 - script: npm install async
 - script: npm install vsts-task-lib
+- script: npm install somemodule
+- script: npm install xml2js
 - task: BrowserStackConfig@0
   inputs:
     BrowserStackServiceEndPoint: 'LocalConnection'
