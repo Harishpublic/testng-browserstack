@@ -16,9 +16,7 @@ pool:
 
 steps:
 
-- task: BrowserStackConfig@0
-  inputs:
-    BrowserStackServiceEndPoint: 'AEMAccess'
+
 
 - script: npm install browserstack-local
 - script: npm install request
@@ -28,7 +26,7 @@ steps:
 - script: npm install xml2js
 - task: BrowserStackConfig@0
   inputs:
-    BrowserStackServiceEndPoint: 'LocalConnection'
+    BrowserStackServiceEndPoint: 'AEMAccess'
 - script: echo Hello, world!
 # - script: mvn compile
 - script: mvn clean compile test -P single
