@@ -15,6 +15,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
+- task: BrowserStackConfig@0
+  inputs:
+    BrowserStackServiceEndPoint: 'AEMAccess'
+
 - script: npm install browserstack-local
 - script: npm install request
 - script: npm install async
